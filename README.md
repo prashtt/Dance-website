@@ -32,7 +32,7 @@ Dance-website/ ├── static/ # CSS, JS, images ├── views/ # Pug templa
 
 
        Open browser and go to:
-📍 http://localhost:3000
+📍 http://localhost:8000
 
 🎯 Tech Stack
 HTML + CSS
