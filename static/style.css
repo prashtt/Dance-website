@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Audiowide", sans-serif;
+}
+
+#navbar {
+    background-color: #d43b3b;
+    padding: 10px 30px;
+  }
+  
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  #navbar li {
+    font-family: 'Audiowide', sans-serif;
+    color: white;
+  }
+  
+  #navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    font-weight: bold;
+  }
+  
+  #navbar li a:hover {
+    color: black;
+  }
+  
+  #navbar img {
+    margin-right: 10px;
+  }
+
+  #logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+  }
+
+
+  
+/* Intro Section */
+#introSection {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 65px;
+  align-items: center;
+  height: 425px;
+  position: relative;
+  background: url("/static/bg.jpg") center/cover no-repeat;
+  color: white;
+  font-family: "Audiowide", sans-serif;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+}
+
+#introSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 1, 1, 0.5);
+  z-index: -1;
+}
+
+#introSection div.small {
+  font-size: 42px;
+  padding: 5px;
+}
+
+/* Mission Section */
+#missionSection {
+  height: 326px;
+  background-color: white;
+  margin: auto;
+  width: 80%;
+}
+
+#missionSection h2 {
+  font-family: 'Yeon Sung';
+  text-align: center;
+  padding-top: 12px;
+  font-size: 36px;
+}
+
+/* Card Style */
+ .card {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 30%;
+  margin: 23px 20px;
+  height: 195px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.card h3 {
+  text-align: center;
+  margin: 0 12px;
+  margin-top: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-img{
+  height: 100px;
+  padding: 0 14px;
+}
+
+.card-img img{
+  height: inherit;
+} 
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+.card-content p {
+  color: #444;
+  font-size: 16px;
+
+} 
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* .card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card-box {
+  padding: 0;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content p {
+  margin: 0;
+  color: #444;
+  font-size: 16px;
+  line-height: 1.5;
+} */
+
+
+/* Sponsors Section */
+#sponsorsSection {
+  font-size: 36px;
+  font-family: 'Yeon Sung';
+  text-align: center;
+  padding-top: 12px;
+  height: 300px;
+  background-color: #fbd6d6c7;
+}
+
+/* Footer */
+/* #footer {
+  background-color: black;
+  height: 60px;
+} */
+
+/* Sponsors Section */
+#sponsorsSection {
+  font-size: 36px;
+  font-family: 'Yeon Sung';
+  text-align: center;
+  padding: 20px 0;
+  background-color: #fbd6d6c7;
+}
+
+#sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+#sponsors img {
+  height: 120px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Footer */
+#footer {
+  background-color: black;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
